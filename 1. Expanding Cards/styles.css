@@ -1,0 +1,60 @@
+* {
+  font-family: "Blender Pro", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 4rem;
+}
+
+.container > * {
+  flex: 1;
+  overflow: hidden;
+  margin: 1rem;
+  border-radius: 20px;
+  height: 75vh;
+  transition: flex 0.5s ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+
+h3 {
+  text-shadow: 0 0 7px grey;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: rgb(228, 255, 73);
+  font-size: 1.5em;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.visible-text {
+  opacity: 1;
+}
+
+.img-container-expanded {
+  flex: 14;
+}
+
+img {
+  height: 75vh;
+}
+
+@font-face {
+  font-family: "Blender Pro";
+  src: url("BlenderPro-Heavy.eot");
+  src: local("Blender Pro Heavy"), local("BlenderPro-Heavy"),
+    url("./fonts/BlenderPro-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/BlenderPro-Heavy.woff2") format("woff2"),
+    url("./fonts/BlenderPro-Heavy.woff") format("woff"),
+    url("./fonts/BlenderPro-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
