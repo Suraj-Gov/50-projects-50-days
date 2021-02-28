@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotating Navigation</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="toggle">
+      <button onclick="toggleMenu()" class="toggle-open">
+        <!-- prettier-ignore -->
+        <svg height="384pt" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg"><path class="hide" d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path class="top" d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path class="bottom" d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>
+      </button>
+    </div>
+    <div class="container">
+      <div id="article-container">
+        <article>
+          <h1>The firsts of the Internet.</h1>
+          <h2>The first uploaded photo.</h2>
+          <img
+            src="https://assets3.thrillist.com/v1/image/1599922/1584x3000/scale;jpeg_quality=60.jpg"
+            alt="first-image"
+          />
+          <p>
+            1992 - The earliest photo to ever grace the Internet was this shot
+            of Les Horribles Cernettes -- a comedy band based at the CERN
+            laboratory in Switzerland, where Tim Berners-Lee and his team were
+            busy developing the World Wide Web. After rolling out an updated
+            version that could support photos, they tested it out with a
+            backstage shot an IT developer took at one of the band’s
+            performances.
+          </p>
+          <h2>The first FB profile</h2>
+          <p>
+            2004 - While Mark Zuckerberg had the first account, officially, the
+            first non-founder to set up a profile was a buddy of co-founder
+            Chris Hughes named Arie Hasit whose account apparently keeps getting
+            disabled for no reason.
+          </p>
+          <h2>The first Internet transaction</h2>
+          <p>
+            1973 - Decades before eBay, Amazon, or the Silk Road would launch, a
+            group of Stanford students using ARPANET (the precursor to the
+            Internet that we know now) facilitated the sale of an undetermined
+            amount of weed to some other students across the country at MIT.
+          </p>
+          <h2>The first search engine</h2>
+          <p>
+            1994 - A full four years before Google even launched, WebCrawler was
+            the first search engine to provide full-text search. It changed
+            hands several times over the course of the late ‘90s, but still
+            exists today as a metasearch engine that blends top results from
+            Google and Yahoo.
+          </p>
+        </article>
+        <div class="article-extend"></div>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar-links">
+          <a href="#">HOME</a>
+          <a href="#">ABOUT</a>
+          <a href="#">CONTACT</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>

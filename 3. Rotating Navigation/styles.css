@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+article {
+  padding: 4rem;
+  background-color: #f3f7ff;
+}
+
+#article-container {
+  transition: all 0.2s ease-in-out;
+  z-index: 5;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -5;
+  top: 0;
+  left: 0;
+  background-color: palevioletred;
+}
+
+.sidebar-links {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.2rem;
+  transform: translateX(-300px);
+  transition: all 0.2s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+}
+
+.active-sidebar-links {
+  transform: translateX(0);
+}
+
+.sidebar-links > * {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-weight: 700;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  color: grey;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3em;
+  padding-bottom: 1rem;
+}
+
+.toggle-open {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.toggle {
+  width: 10rem;
+  height: 10rem;
+  position: fixed;
+  top: -5rem;
+  left: -5rem;
+  border-radius: 50%;
+  background-color: bisque;
+  z-index: 10;
+}
+
+button {
+  cursor: pointer;
+}
+
+h2 {
+  padding: 0.5rem 0;
+  padding-top: 1rem;
+}
+
+.rotated {
+  transform: rotateZ(-25deg);
+}
+
+.article-extend {
+  position: fixed;
+  background-color: #f3f7ff;
+  height: 100vh;
+  width: 100%;
+}
+
+svg {
+  transition: all 0.2s;
+}
