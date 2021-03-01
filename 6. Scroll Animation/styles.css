@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: rgb(232, 245, 255);
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.object {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 10px;
+  margin: 0.5rem;
+  background-color: red;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+
+.object-group {
+  display: flex;
+  position: relative;
+}
+
+.left {
+  left: -1000px;
+}
+.right {
+  left: 1500px;
+}
+.show {
+  left: 0;
+}
