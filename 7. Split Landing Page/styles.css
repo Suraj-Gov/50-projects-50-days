@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.a,
+.b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50vw;
+  flex: 1;
+  height: 100vh;
+}
+
+.text {
+  color: transparent;
+  font-size: 5rem;
+  font-weight: 700;
+  text-shadow: transparent 0px 0px 50px;
+}
+
+.a,
+.b,
+.text {
+  transition: flex 0.5s cubic-bezier(0.85, 0, 0.15, 1),
+    color 0.8s cubic-bezier(0.85, 0, 0.15, 1), text-shadow 0.5s ease-in-out;
+}
+
+.a {
+  background-image: url(./nike.png);
+  background-size: 40vw;
+  background-position: 50% 40%;
+  background-color: #31c5c6;
+}
+
+.a:hover,
+.b:hover {
+  /* width: 65vw; */
+  flex: 2;
+}
+
+.b {
+  background-image: url(./adidas.png);
+  background-size: 70vw;
+  background-color: #e85873;
+}
